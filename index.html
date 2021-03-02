@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<title>Spoons Game!</title>
+	<!-- CSS, font awesome and favicon -->
+	<link rel="stylesheet" type="text/css" href="./css/w3.css"/>
+	<link rel="stylesheet" type="text/css" href="./css/style.css"/>
+	<link rel="icon" type="image/png" href="./images/spoon.jpg"/>
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" rel="stylesheet"/>
+	<!-- Javascript and jquery -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src='js/myspoons.js'></script>
+	
+</head>
+<body>
+<!-- Navigation Menu -->
+<div class="w3-bar w3-large w3-blue">
+	<a href="./index.html" class="w3-bar-item w3-button w3-mobile"><i class="far fa-play-circle"></i> Play</a>
+	<a href="./lib/reset.php" class="w3-bar-item w3-button w3-mobile"><i class="fas fa-redo-alt"></i> Reset</a>
+	<a href="./help.html" class="w3-bar-item w3-button w3-mobile"><i class="fas fa-info-circle"></i> Help</a>
+</div>
+
+<!-- Main Container starting here -->
+<div class="w3-container w3-center w3-padding w3-margin">
+	<div id="testing"></div>
+	<!-- User Form starting here -->
+	<form id="uform" action="lib/start_game.php" method="get" style="visibility: hidden;">
+		<b> Let's play the card spoons game! </b><br/><br/>
+		Name Player 1 <input type="" name="playername1"> <br/>
+		Name Player 2 <input type="" name="playername2"> <br/><br/>
+		<input type="submit" name="submit1" /> 
+	</form>
+	<!-- Board starting here -->
+	<div id="board" class="w3-container" style="visibility: hidden;">
+		<h2 id="phase"></h2>
+		<!-- Player 1 left -->
+		<div id="left" class="w3-container w3-left">
+			<div id="name1"></div>
+			<div id="p1card1" class="w3-show-inline-block"></div>
+			<div id="p1card2" class="w3-show-inline-block"></div>
+			<div id="p1card3" class="w3-show-inline-block"></div>
+			<div id="p1card4" class="w3-show-inline-block"></div>
+			<div id="p1card5" class="w3-show-inline-block"></div>
+			<br/><br/>
+			<button id="take" type="submit">Take Card</button>
+		</div>
+		<!-- Player 2 right -->
+		<div id="right" class="w3-container w3-right">
+			<div id="name2"></div>
+			<div id="p2card1" class="w3-show-inline-block"></div>
+			<div id="p2card2" class="w3-show-inline-block"></div>
+			<div id="p2card3" class="w3-show-inline-block"></div>
+			<div id="p2card4" class="w3-show-inline-block"></div>
+			<div id="p2card5" class="w3-show-inline-block"></div>
+		</div>
+	</div>
+</div>
+<!-- Footer starting here -->
+<footer class="w3-padding w3-center w3-blue w3-bottom">
+    <div class="w3-container">
+        <h4><a href="https://github.com/btx-dev" class="custom-link">btx-dev 2021</a></h4>
+    </div>
+</footer>
+
+</body>
+</html>
