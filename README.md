@@ -1,9 +1,9 @@
 # Spoons-API
 
- Card Game "Spoons" with API implementation (figures only). 
- JSON format.
- Work in progress.
- Any feedback appreciated! 
+ Card Game "Spoons" with API implementation (figures only).  
+ JSON format.  
+ Work in progress.  
+ Any feedback appreciated!  
 
 Install:
 1. Create a 'config_local.php' in 'lib' directory
