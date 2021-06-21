@@ -23,10 +23,12 @@ function set_board(status)
 	{
 		case 'not_active':
 			$('#uform').css("visibility", "visible");
+			$('#testing').addClass("w3-red");
 			break;
 		case 'active':
 			$('#uform').css("visibility", "hidden");
 			$('#board').css("visibility", "visible");
+			$('#testing').addClass("w3-green") ;
 			set_board_for_players();
 			break;
 	}

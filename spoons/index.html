@@ -21,13 +21,19 @@
 
 <!-- Main Container starting here -->
 <div class="w3-container w3-center w3-padding w3-margin">
-	<div id="testing"></div>
+	Game Status: <span id="testing" class="w3-tag"></span>
 	<!-- User Form starting here -->
 	<form id="uform" action="lib/start_game.php" method="get" style="visibility: hidden;">
-		<b> Let's play the card spoons game! </b><br/><br/>
-		Name Player 1 <input type="" name="playername1"> <br/>
-		Name Player 2 <input type="" name="playername2"> <br/><br/>
-		<input type="submit" name="submit1" /> 
+		<h3> Let's play the card spoons game! </h3>
+		<div class="w3-section">
+			<span class="w3-tag w3-blue w3-margin-right">Player 1 </span>
+			<input type="" name="playername1"> 
+		</div>
+		<div class="w3-section">
+			<span class="w3-tag w3-blue w3-margin-right">Player 2 </span>
+			<input type="" name="playername2"> 
+		</div>
+		<input type="submit" name="submit1" class="w3-button w3-blue w3-hover-green" /> 
 	</form>
 	<!-- Board starting here -->
 	<div id="board" class="w3-container" style="visibility: hidden;">
@@ -41,7 +47,7 @@
 			<div id="p1card4" class="w3-show-inline-block"></div>
 			<div id="p1card5" class="w3-show-inline-block"></div>
 			<br/><br/>
-			<button id="take" type="submit">Take Card</button>
+			<button id="take" type="submit" class="w3-button w3-blue w3-hover-green">Take Card</button>
 		</div>
 		<!-- Player 2 right -->
 		<div id="right" class="w3-container w3-right">
